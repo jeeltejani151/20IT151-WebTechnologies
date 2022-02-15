@@ -1,0 +1,25 @@
+@media only screen and (max-width: 600px) {
+    .boxLayout{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    } 
+}
+@media only screen and (min-width: 1200px) {
+    .boxLayout{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .box{
+        width: 32vw;
+    }
+}
+.box{
+    background-color: lightgray;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 3rem;
+    padding: 10vh 0;
+}
