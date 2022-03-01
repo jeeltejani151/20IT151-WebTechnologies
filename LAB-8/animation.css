@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('ocean.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+.boat img{
+    width: 250px;
+    position: absolute;
+    bottom: 165px;
+    animation-name: boat;
+    animation-direction:alternate ;
+    animation-duration: 10s;
+
+}
+@keyframes boat{
+    
+    0%{left: 0%;
+       transform: rotate(0deg);
+
+    }
+    10%{
+        transform: rotate(-4deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(-4deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(4deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(-4deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+    90%{
+        transform: rotate(4deg);
+    }
+    100%{left: 100%;
+        transform: rotate(0deg);
+    }
+   
+}
