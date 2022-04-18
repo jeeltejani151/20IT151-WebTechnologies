@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.PI</h2>
+
+<p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+
+<p id="demo"></p>
+
+<h2>JavaScript Math Constants</h2>
+
+<p id="Constants"></p>
+
+<h2>JavaScript Math.round()</h2>
+
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+
+<p id="round"></p>
+
+<h2>JavaScript Math.pow()</h2>
+
+<p>Math.pow(x,y) returns the value of x to the power of y:</p>
+
+<p id="p"></p>
+
+<h2>JavaScript Math.max()</h2>
+
+<p>Math.max() returns the highest value in a list of arguments.</p>
+
+<p id="max"></p>
+<script>
+document.getElementById("demo").innerHTML = Math.PI;
+
+document.getElementById("Constants").innerHTML = 
+"<p><b>Math.E:</b> " + Math.E + "</p>" +
+"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>"
+
+document.getElementById("round").innerHTML = Math.round(4.6);
+
+document.getElementById("p").innerHTML = Math.pow(8,2);
+
+document.getElementById("max").innerHTML =
+Math.max(0, 150, 30, 20, -8, -200);
+
+
+
+</script>
+
+</body>
+</html>

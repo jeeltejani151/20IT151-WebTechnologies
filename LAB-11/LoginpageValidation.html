@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="LoginpageValidation.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="#"  name="form" onsubmit="check_validation()">
+			<div class="font">Email or Phone</div>
+			<input type="text" name="email" id="email">
+			<div class="error_message" id="err_email">Email can't be blank</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password" id="password">
+			<div class="error_message" id="err_pass">Password can't be blank</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>	
+	<script src="LoginpageValidation.js"></script>
+</body>
+</html>

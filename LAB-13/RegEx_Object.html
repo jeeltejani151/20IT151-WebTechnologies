@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex_object</title>
+</head>
+<body>
+    <p>Search a string for "TEJANI", and display the position of the match:</p>
+
+<p id="demo_1"></p>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo_2">Please visit Microsoft!</p>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>Do a global search for the character "h" in a string:</p>
+
+<p id="demo_3"></p>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>Search for an "e" in the next paragraph:</p>
+
+<p id="p01">The best things in life are free!</p>
+
+<p id="demo_4"></p>
+
+
+
+<script>
+let text = "JEEL TEJANI"; 
+let n = text.search("TEJANI");
+document.getElementById("demo_1").innerHTML = n;
+
+function myFunction() {
+  let text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo_2").innerHTML =
+  text.replace("Microsoft","W3Schools");
+}
+
+let text1= "Is this all there is?";
+let result = text1.match(/[h]/g);
+document.getElementById("demo_3").innerHTML = result;
+
+let text2 = document.getElementById("p01").innerHTML;
+const pattern = /e/;
+document.getElementById("demo_4").innerHTML = pattern.test(text2);
+
+</script>
+
+    
+</body>
+</html>

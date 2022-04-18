@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="email,pone_validation.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="#"  name="form" onsubmit="check_validation()">
+			<div class="font">Email</div>
+			<input type="text" name="email" id="email">
+			<div class="error_message" id="err_email">Email can't be blank</div>
+			<div class="error_message" id="err_email_1">unvalide email</div>
+			<div class="font font2">Phone Number</div>
+			<input type="text" name="PhoneNumber" id="PhoneNumber">
+			<div class="error_message" id="err_phone">Phone Number is unvalide</div>
+            <div class="error_message" id="err_phone_1">Phone Number can't be blank</div>
+            <div class="font"></div>
+            <br>
+            <div class="font">ZipCode</div>
+			<input type="text" name="ZipCode" id="ZipCode">
+			<div class="error_message" id="err_Zip">unvalide Zipcode</div>
+            <br>
+            <div class="font">creditcard</div>
+			<input type="text" name="creditcard Number" id="creditcard">
+			<div class="error_message" id="err_cred">unvalide creditcard Number</div>
+			<div class="button">
+                <input type="submit" value="Login">
+            </div>
+		</form>
+	</div>	
+	<script src="email,pone_validation.js"></script>
+</body>
+</html>

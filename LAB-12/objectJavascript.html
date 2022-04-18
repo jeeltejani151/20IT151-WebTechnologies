@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript <i>this</i> Keyword</h1>
+<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+<p>Because <b>fullName</b> is a method of the person object.</p>
+
+<p id="demo"></p>
+
+<h2>JavaScript Objects</h2>
+<p>Displaying a JavaScript object will output [object Object]:</p>
+
+<p id="demo2"></p>
+
+<h2>JavaScript Getters and Setters</h2>
+
+<p>Getters and setters allow you to get and set object properties via methods.</p>
+
+<p>This example uses a lang property to get the value of the language property:</p>
+
+<p id="demo3"></p>
+
+<h2>JavaScript Object Constructors</h2>
+
+<p id="demo4"></p>
+
+<script>
+
+const person = {
+  firstName: "Jeel",
+  lastName: "Tejani",
+  id: 151,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+document.getElementById("demo").innerHTML = person.fullName();
+
+const perso = {
+  name: "Jeel",
+  age: 30,
+  city: "New York"
+};
+
+document.getElementById("demo2").innerHTML = perso;
+
+const p = {
+  firstName: "Jeel",
+  lastName: "Tejani",
+  language: "Gujrati",
+  get lang() {
+    return this.language;
+  }
+};
+
+
+document.getElementById("demo3").innerHTML = p.lang;
+
+function Per(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+const myFather = new Per("Jagdishbhai", "Tejani", 47, "blue");
+document.getElementById("demo4").innerHTML =
+"My father is " + myFather.age + ".";
+
+ 
+</script>
+
+</body>
+</html>
